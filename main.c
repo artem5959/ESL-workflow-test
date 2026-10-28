@@ -1,10 +1,14 @@
 #include <stdio.h>
-#include "vector3.h"
+#include "vectorfuncs.c"
 
 int main(void)
 {
-    VECTOR a = {1.1, 2.2, 3.3};
-    VECTOR b = {2.3, 3.4, 5.4};
+    VECTOR a = {0, 0, 0};
+    VECTOR b = {0, 0, 0};
+    printf("Введите координаты x y z через пробел для первого вектора\n");
+    scanf("%lf %lf %lf", &a.x, &a.y, &a.z);
+    printf("Введите координаты x y z через пробел для второго вектора\n");
+    scanf("%lf %lf %lf", &b.x, &b.y, &b.z);
 
     VECTOR sum = vector_sum(a, b);
 
