@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "vectorfuncs.c"
+#include "vectorfuncs.h"
 
 int main(void)
 {
